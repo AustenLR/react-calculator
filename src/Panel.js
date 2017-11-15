@@ -1,0 +1,94 @@
+import React from 'react';
+import NumberButton from './NumberButton';
+import OperationButton from './OperationButton';
+
+const Panel = props => {
+  return (
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <NumberButton
+              curNumClickHandler={props.curNumClickHandler}
+              num="1"
+            />
+          </td>
+          <td>
+            <NumberButton
+              curNumClickHandler={props.curNumClickHandler}
+              num="2"
+            />
+          </td>
+          <td>
+            <NumberButton
+              curNumClickHandler={props.curNumClickHandler}
+              num="3"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <NumberButton
+              curNumClickHandler={props.curNumClickHandler}
+              num="4"
+            />
+          </td>
+          <td>
+            <NumberButton
+              curNumClickHandler={props.curNumClickHandler}
+              num="5"
+            />
+          </td>
+          <td>
+            <NumberButton
+              curNumClickHandler={props.curNumClickHandler}
+              num="6"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <NumberButton
+              curNumClickHandler={props.curNumClickHandler}
+              num="7"
+            />
+          </td>
+          <td>
+            <NumberButton
+              curNumClickHandler={props.curNumClickHandler}
+              num="8"
+            />
+          </td>
+          <td>
+            <NumberButton
+              curNumClickHandler={props.curNumClickHandler}
+              num="9"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <OperationButton
+              operationClickHandler={props.operationClickHandler}
+              operation="plus"
+            />
+          </td>
+          <td>
+            <OperationButton
+              operationClickHandler={props.operationClickHandler}
+              operation="minus"
+            />
+          </td>
+          <td>
+            <OperationButton
+              operationClickHandler={props.operationClickHandler}
+              operation="equal"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  );
+};
+
+export default Panel;
